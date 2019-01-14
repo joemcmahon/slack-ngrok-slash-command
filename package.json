@@ -1,0 +1,23 @@
+{
+  "name": "slack-ngrok-tunnel",
+  "version": "1.0.0",
+  "description": "base slash-command service for development",
+  "scripts": {
+    "test": "standard"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/joemcmahon/slack-ngrok-tunnel.git"
+  },
+  "author": "Joe McMahon",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/joemcmahon/slack-ngrok-tunned/issues"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "lodash": "^4.17.11",
+    "request": "^2.88.0"
+  }
+}
