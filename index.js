@@ -58,9 +58,11 @@ app.post('/command', function(req, res) {
         method: 'GET', //Specify the method
     }, function (error, response, body) {
         if (error) {
+            console.log("Failed to talk to Slack.");
             console.log(error);
         } else {
 		  // Sample command: show active users."});
+          console.log("Got: " + body");
           j = JSON.parse(body);
           var active = _.without(_.map(j.members, function(o) {
             if(o.presence == 'active') return o.name;
