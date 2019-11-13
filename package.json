@@ -21,6 +21,6 @@
     "request": "^2.88.0"
   },
   "scripts": {
-    "start": "npm run index.js"
+    "start": "yarn run index.js"
   }
 }
