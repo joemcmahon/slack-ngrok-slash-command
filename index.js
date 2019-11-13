@@ -11,7 +11,7 @@ const CLIENT_SECRET=process.env.CLIENT_SECRET;
 const ACCESS_TOKEN=process.env.ACCESS_TOKEN;
 
 var app = express();
-const PORT = 4390;
+const PORT = process.env.PORT || 4390;
 
 // Let's start our server
 app.listen(PORT, function () {
