@@ -62,7 +62,7 @@ app.post('/command', function(req, res) {
             console.log(error);
         } else {
 		  // Sample command: show active users."});
-          console.log("Got: " + body");
+          console.log("Got: ", body);
           j = JSON.parse(body);
           var active = _.without(_.map(j.members, function(o) {
             if(o.presence == 'active') return o.name;
